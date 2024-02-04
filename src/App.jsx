@@ -31,7 +31,6 @@ const App = () => {
     <div className="container">
       <Titulo/>
       <form className="border border-top-0 px-5 py-3" onSubmit={verificarDatos}>
-        <h5 className='py-4'>Llenar el formulario para crear una cita</h5>
         <div className="row mb-3">
           <label className="col-sm-2 col-form-label">Nombre</label>
           <div className="col-sm-10">
