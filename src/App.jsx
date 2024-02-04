@@ -10,12 +10,14 @@ const App = () => {
     email: '',
   });
 
-  const handleChange = (e) => {
+  
+  const recibirDatos = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  
+  const verificarDatos = (e) => {
     e.preventDefault();
 
     if (formData.nombre && formData.apellido && formData.dni && formData.email) {
@@ -28,33 +30,33 @@ const App = () => {
   return (
     <div className="container">
       <Titulo/>
-      <form className="border border-top-0 px-5 py-3" onSubmit={handleSubmit}>
+      <form className="border border-top-0 px-5 py-3" onSubmit={verificarDatos}>
         <h5 className='py-4'>Llenar el formulario para crear una cita</h5>
         <div className="row mb-3">
           <label className="col-sm-2 col-form-label">Nombre</label>
           <div className="col-sm-10">
-            <input type="text" className="form-control" placeholder="Ingrese su nombre" name="nombre" onChange={handleChange} />
+            <input type="text" className="form-control" placeholder="Ingrese su nombre" name="nombre" onChange={recibirDatos} />
           </div>
         </div>
 
         <div className="row mb-3">
           <label className="col-sm-2 col-form-label">Apellido</label>
           <div className="col-sm-10">
-            <input type="text" className="form-control" placeholder="Ingrese su apellido" name="apellido" onChange={handleChange} />
+            <input type="text" className="form-control" placeholder="Ingrese su apellido" name="apellido" onChange={recibirDatos} />
           </div>
         </div>
 
         <div className="row mb-3">
           <label className="col-sm-2 col-form-label">DNI</label>
           <div className="col-sm-10">
-            <input type="text" className="form-control" placeholder="Ingrese su DNI" name="dni" onChange={handleChange} />
+            <input type="text" className="form-control" placeholder="Ingrese su DNI" name="dni" onChange={recibirDatos} />
           </div>
         </div>
 
         <div className="row mb-3">
           <label className="col-sm-2 col-form-label">Email</label>
           <div className="col-sm-10">
-            <input type="email" className="form-control" placeholder="Ingrese su email" name="email" onChange={handleChange} />
+            <input type="email" className="form-control" placeholder="Ingrese su email" name="email" onChange={recibirDatos} />
           </div>
         </div>
 
