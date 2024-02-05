@@ -1,8 +1,11 @@
-# React + Vite
+# Formulario con controles
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En este proyecto tenemos un formulario simple pero con con los controles necesarios para que si falta algun campo, al presionar enviar se muestre un alert "completar todos los campos"
 
-Currently, two official plugins are available:
+## Link del sitio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Formulario con controles]()
+
+## Autores
+
+Lisandro Civili
